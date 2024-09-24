@@ -1,0 +1,16 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h1 {
+    color: #343a40;
+}
+
+.card {
+    border: none;
+}
+
+.card-img-top {
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover; /* Maintain aspect ratio */
+}
