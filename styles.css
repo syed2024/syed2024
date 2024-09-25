@@ -14,3 +14,21 @@ h1 {
     height: 200px; /* Adjust the height as needed */
     object-fit: cover; /* Maintain aspect ratio */
 }
+
+#headerDiv {
+    background-color: rgb(55, 232, 126);
+    height: 50px;
+    display: flex;            /* Enable Flexbox */
+    align-items: center;     /* Center vertically */
+    justify-content: center;  /* Center items */
+    gap: 100px;               /* Space between links */
+    font-size: 1.5em;
+
+}
+
+.header-link {
+    text-decoration: none;    /* Remove underline from links */
+    color: rgb(204, 24, 24);            /* Change text color as needed */
+    font-size: 2.5em;
+}
+
