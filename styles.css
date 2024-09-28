@@ -66,9 +66,28 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 300px;
 }
 
 .header-image
 {
-    height: 200px;
+    height: 350px;
+    width: 230px;
+}
+
+.prof
+{
+    width: 500px;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blueviolet;
+}
+
+ol {
+    list-style-type: decimal-leading-zero; 
+    padding-left: 20px; 
+}
+
+li {
+    margin-bottom: 15px; 
 }
