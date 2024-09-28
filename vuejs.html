@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .button {
+            padding: 10px 15px;
+            background-color: #42b983;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #367c67;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h1>{{ title }}</h1>
+        <p>{{ message }}</p>
+        
+        <input v-model="userInput" placeholder="Type something...">
+        <button class="button" @click="updateMessage">Update Message</button>
+        
+        <h2>Items:</h2>
+        <ul>
+            <li v-for="item in items" :key="item.id">{{ item.name }}</li>
+        </ul>
+        
+        <h2>Add Item:</h2>
+        <input v-model="newItem" placeholder="New item name">
+        <button class="button" @click="addItem">Add Item</button>
+    </div>
+
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    title: 'Welcome to My Vue App',
+                    message: 'This is a simple Vue.js example.',
+                    userInput: '',
+                    newItem: '',
+                    items: [
+                        { id: 1, name: 'Item 1' },
+                        { id: 2, name: 'Item 2' }
+                    ]
+                };
+            },
+            methods: {
+                updateMessage() {
+                    this.message = this.userInput;
+                    this.userInput = '';
+                },
+                addItem() {
+                    if (this.newItem.trim()) {
+                        this.items.push({
+                            id: this.items.length + 1,
+                            name: this.newItem
+                        });
+                        this.newItem = '';
+                    }
+                }
+            }
+        });
+
+        app.mount('#app');
+    </script>
+</body>
+</html>
