@@ -58,3 +58,17 @@ h1 {
 .header-link:hover .dropdown-content {
     display: block;
 }
+
+
+
+.header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-image
+{
+    height: 200px;
+}
