@@ -22,7 +22,7 @@ h1 {
     align-items: center;     /* Center vertically */
     justify-content: center;  /* Center items */
     gap: 100px;               /* Space between links */
-    font-size: 1.5em;
+    font-size: 1.2em;
 
 }
 
@@ -31,7 +31,7 @@ h1 {
     position: relative;
     display: inline-block;
     cursor: pointer;
-    padding: 10px 15px;
+    padding: 10px 2px;
     text-decoration: none;
     border-radius: 5px;
 }
@@ -40,7 +40,7 @@ h1 {
     display: none;
     position: absolute;
     background-color:rgb(55, 232, 126);
-    min-width: 160px;
+    min-width: 260px;
 
 }
 
