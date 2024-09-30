@@ -1,0 +1,43 @@
+body{
+    background-color:azure;
+    border: 2px black solid;
+}
+
+.navBar
+{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    color: aqua;
+    
+}
+
+
+
+.homeDiv
+{
+    
+    width: 70%; /* or any width */
+    margin:10px auto;
+    font-size: 1.5em;
+}
+
+.aboutDiv
+{
+   
+    margin: 50px auto;
+    width: 80%;
+}
+
+.aboutDiv h1,h2,h3
+{
+    text-align: center;
+   
+}
+.aboutDiv p
+{
+    font-size: 20px;
+    color: blue;
+}
