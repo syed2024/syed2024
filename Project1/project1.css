@@ -41,3 +41,44 @@ body{
     font-size: 20px;
     color: blue;
 }
+
+.productsDiv
+{
+    border: 2px solid red;
+    margin: 50px 20px;
+    width: auto;
+}
+
+.productsDiv img
+{
+    height: 200px;
+    width: 275px;
+    transition: height 0.5s ease, width 0.5s ease;
+}
+
+.productsDiv img:hover
+{
+    height: 300px;
+    width: 500px;
+    
+}
+.contactusDiv
+{
+    background-color:blanchedalmond;
+
+}
+
+.contactusDiv table
+{
+ 
+    margin: 0 auto;
+
+    
+}
+.contactusDiv table td
+{
+    padding: 0px 50px;
+    justify-content: left;
+}
+
+

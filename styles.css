@@ -77,7 +77,11 @@ h1 {
 
 .prof
 {
-    width: 500px;
+    width: 700px;
+    margin: 0 auto;;
+    align-items: center;
+    justify-content: center;
+    
     font-size: large;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: blueviolet;
