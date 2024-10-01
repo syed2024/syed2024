@@ -67,6 +67,12 @@ h1 {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 300px;
+
+}
+.header p
+{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .header-image
