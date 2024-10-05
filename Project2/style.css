@@ -1,0 +1,28 @@
+.button {
+    padding: 2px;
+    font-size: 1.5em;
+    margin: 20px;
+    width: 10%;                
+}
+
+
+
+.buttonDiv {
+    width: 50%;
+    height: 500px;             /* Set height for the button container */
+    display: flex;             /* Use Flexbox for the button container */
+    justify-content: center;   /* Center buttons horizontally */
+    align-items: center;       /* Center buttons vertically */
+    margin: 0 auto;           /* Center the buttonDiv horizontally */
+    flex-direction: column;    /* Stack buttons vertically */
+}
+
+
+#Div1
+{
+    background-color: aqua;
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+}
+
