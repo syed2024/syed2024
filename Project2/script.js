@@ -1,6 +1,6 @@
 function colour(name) {
-    const body = document.getElementsByTagName("div")[0]; 
-    body.style.backgroundColor = name;
+    const body1 = document.getElementById("buttonDiv1"); 
+    body1.style.backgroundColor = name;
    
 }
 

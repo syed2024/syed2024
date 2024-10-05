@@ -3,20 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="../styles.css"> <!-- Link to external CSS file -->
     <title>Document</title>
     <script>
-      
     </script>
 </head>
+
 <body>
+    <header>
+        <div id="headerDiv">
+            <a class=".header-link" href="../index.html">Home</a>
+            <a class=".header-link" href="../about.html">About</a>
+    
+            
+            <div class="header-link"> Projects
+                <div class="dropdown-content">
+                    <a href="../Project1/project1.html">Project 1 (Html ,CSS)</a>
+                    <a href="../Project2/index.html">Project 2 (Html , Css , JavaScript)</a>
+                    <a href="#">Project 3</a>
+                    <a href="#">Project 4</a>
+                </div>
+            </div>
+        </div>
+    </header>
     
     <h1>Color Changing Screen</h1>
-    <button class="button" onclick="colour('blue')" style="background-color: blue;">Blue</button>
-    <button class="button" onclick="colour('red')" style="background-color: red;">Red</button>
-    <button class="button" onclick="colour('yellow')" style="background-color: yellow;">Yellow</button>
-    <button class="button" onclick="colour('green')" style="background-color: green;">Green</button> <br> <br>
-<div class="buttonDiv">
+    <button class="button2" onclick="colour('blue')" style="background-color: blue;">Blue</button>
+    <button class="button2" onclick="colour('red')" style="background-color: red;">Red</button>
+    <button class="button2" onclick="colour('yellow')" style="background-color: yellow;">Yellow</button>
+    <button class="button2" onclick="colour('green')" style="background-color: green;">Green</button> <br> <br>
+<div id="buttonDiv1">
 </div>
 
 
@@ -48,6 +65,10 @@
 
         
 </div>
-<script src="script.js"></script>
+<script src="script.js">
+
+
+
+</script>
 </body>
 </html>
