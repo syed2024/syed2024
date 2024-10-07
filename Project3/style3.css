@@ -1,3 +1,9 @@
+#body
+{
+    background-color:burlywood;
+    margin: 0px;
+    padding: 10px;
+}
 #game
 {
     background-color: yellowgreen;
@@ -16,12 +22,7 @@
 
 }
 
-body
-{
-    background-color:burlywood;
-    margin: 20px;
-    padding: 20px;
-}
+
 
 #nav a
 {
