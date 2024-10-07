@@ -1,0 +1,59 @@
+#game
+{
+    background-color: yellowgreen;
+    border: 10px forestgreen double;
+    height: 250px;
+    width: 500px;
+    align-items: center;
+    margin: 250px auto;
+    text-align: center;
+
+}
+
+#result
+{
+    font-size: large;
+
+}
+
+body
+{
+    background-color:burlywood;
+    margin: 20px;
+    padding: 20px;
+}
+
+#nav a
+{
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    font-size: x-large;
+    text-decoration: none;
+    border: 2px black solid;
+    height: 40px;
+    padding:  10px;
+
+}
+
+#footer p
+{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: x-large;
+    border: 2px black solid;
+    height: 30px;
+    padding: auto 0px;
+    
+    
+}
+
+#number
+{
+    padding: 10px;
+    background-color:white;
+}
+
+
+
