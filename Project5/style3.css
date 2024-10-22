@@ -1,0 +1,174 @@
+#body5{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+#logo
+{
+    margin: 7px;
+    float: left;
+
+}
+
+.topbar-menu
+{
+    border-left: 2px solid black;
+    height: 100%;
+    float: left;
+    margin: 7px;
+    padding: 10px;
+
+}
+
+.img
+{
+    margin: 10px;
+}
+
+.clear
+{
+    clear: both;
+}
+
+#menubar-container
+{
+    width: 100%;
+    height: 70px;
+    background-color: #BB1912;
+}
+
+#menubar
+{
+    width: 1000px;
+    margin: 0 auto;
+ 
+}
+h1
+{
+    margin: 0;
+    color: white;
+    font-weight: normal;
+    padding-top: 10px;
+    font-size: 40px;
+}
+
+#menubar2-container
+{
+    width: 100%;
+    height: 40px;
+    background-color: #A91717;
+}
+
+
+#menubar2
+{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#menubar2 a
+{
+text-decoration: none;
+color: #FFF;
+padding-left: 10px;
+padding-right: 10px;
+border-right: 2px solid #cc7676;
+position: relative;
+top: 10px;
+
+}
+
+#page-container
+{
+    width: 1000px;
+    margin: 0 auto;
+    
+}
+
+h2{
+    margin-top: 40px;
+    font-weight: normal;
+    font-size: 20px;
+    border-bottom: 2px solid red;
+    width: 100px;
+}
+
+h3 a{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+h3 a:hover{
+    color: rgb(13, 183, 24);
+
+}
+
+#article-summary
+{
+    width: 250px;
+    float: left;
+    
+}
+
+
+#article-container img
+{
+    
+    width: 500px;
+    height: 350px;
+    float: left;
+}
+
+
+#main-article
+{
+    margin-top: 30px;
+    padding-right: 10px;
+    float: left;
+    border-right: 1px solid black;
+}
+
+#Watch-Listen
+{
+       margin-top: 30px;
+
+       
+   
+}
+
+.article-side-image
+{
+    float: left;
+    margin-right: 10px;
+    width: 100px;
+
+  
+}
+
+.watch-listen-link
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.watch-listen-link:hover
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+}
+
+#footer-text
+{
+    text-align: center;
+    color: white;
+    line-height: 70px;
+    font-size: 1.2em;
+}
+
+
