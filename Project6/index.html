@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css"> <!-- Link to external CSS file -->
+
     <title>Document</title>
 </head>
 <style>
@@ -24,6 +26,24 @@
     }
 </style>
 <body>
+    <header>
+        <div id="headerDiv">
+            <a class=".header-link" href="../index.html">Home</a>
+            <a class=".header-link" href="../about.html">About</a>
+            <div class="header-link"> Projects
+                <div class="dropdown-content">
+                    <a href="../Project1/project1.html">Project 1 (Html ,CSS)</a>
+                    <a href="../Project2/index.html">Project 2 (HTML,CSS,JavaScript)</a>
+                    <a href="../Project3/index.html">Project 3 (Html , Css , JavaScript)</a>
+                    <a href="../Project4/index.html">Project 4 (Html , Css)</a>
+                    <a href="../Project5/index.html">Project 5 BBC Clone</a>
+                    <a href="../Project6/index.html">Project 6 JS Game</a>
+
+
+                </div>
+            </div>
+        </div>
+        </header>
     <h2>Click on shapes:</h2>
     <p>Your Time : <span id="timeTaken"></span></p>
     <div id="shape" style="position: absolute; display: none;"></div>
@@ -37,11 +57,12 @@
             document.getElementById("shape").style.display = "none";
             document.getElementById("timeTaken").innerHTML = timeTake + " seconds";
             setTimeout(makeShapeAppear, 1000);
+
         }
 
         function makeShapeAppear() {
-            var randomTop = Math.random() * 500;
-            var randomLeft = Math.random() * 400;
+            var randomTop = Math.random() * 600;
+            var randomLeft = Math.random() * 400 + randomTop;
             var randomWidth = Math.random() * 200 + 50; // Adding a minimum width
             var randomHeight = Math.random() * 200 + 50; // Adding a minimum height
             var color = Math.floor(Math.random() * 16777215).toString(16); // Random color
@@ -56,9 +77,12 @@
             document.getElementById("shape").style.display = "block";
 
             start = new Date().getTime(); // Start the timer when the shape appears
-        }
 
+
+        }
         setTimeout(makeShapeAppear, 1000);
+
+      
 
     </script>
 
