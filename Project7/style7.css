@@ -1,0 +1,143 @@
+#navbar {
+    background-color: rgb(143, 152, 183);
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 5px blue double;
+
+
+
+
+}
+
+#footerbar {
+    background-color: rgb(143, 152, 183);
+    height: 50px;
+    text-align: center;
+    border: 5px blue double;
+    font-size: large;
+    clear: both;
+}
+
+#navbar a {
+    text-decoration: none;
+    font-size: large;
+    font-weight: 500;
+    color: red;
+    padding-left: 20px;
+
+
+}
+
+#homeimg {
+    width: 300px;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    float: left;
+}
+
+
+#homeimg2 {
+    width: 300px;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    float: right;
+}
+
+#Home {
+    border: 5px blue double;
+    padding: 10px;
+    background-color: rgb(100, 164, 102);
+}
+
+#About-Us {
+    border: 5px blue double;
+    padding: 10px;
+    background-color: rgb(100, 164, 102);
+}
+
+#Services {
+    border: 5px blue double;
+    padding: 10px;
+    background-color: rgb(100, 164, 102);
+}
+
+#Services-Table {
+    margin: 0px auto;
+    border: 2px blue solid;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 10px;
+
+
+}
+
+#Services-Table td {
+    padding: 5px;
+    border: 2px blue double;
+    background-color: rgb(100, 164, 102);
+}
+
+#Support {
+    border: 5px blue double;
+    padding: 30px;
+    background-color: rgb(100, 164, 102);
+}
+
+#support-table {
+    margin: 0px auto;
+
+}
+
+#support-table img {
+    height: 200px;
+    width: 300px;
+    padding: 20px;
+
+}
+
+#support-table img {
+    transition: height 0.5s ease, width 0.5s ease;
+    /* Adjust the duration and easing function as needed */
+}
+
+#support-table img:hover {
+    height: 400px;
+    width: 500px;
+    padding: 0px;
+}
+
+#Contact-Us{
+    border: 5px blue double;
+    background-color: rgb(100, 164, 102);
+    float: right;
+    width: 100%;
+
+}
+
+
+#Contact-Us-Address {
+
+    height: 100%;
+    float: left;
+    text-align: left;
+    font-size: large;
+    width: 40%;
+    padding-left: 20px;
+
+}
+
+#Contact-Us-Form {
+
+    float: right;
+    height: 100%;
+    width: 40%;
+
+
+}
+
+
+
