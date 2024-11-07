@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src=
+    "https://code.jquery.com/jquery-3.7.1.min.js" 
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+            crossorigin="anonymous">
+        </script>
+    <title>Document</title>
+    <style>
+        body{
+            font-family: calibri;
+        }
+     #wrapper
+     {
+        width: 400px;
+        margin: 200px auto;
+        align-items: center;
+        border: 2px solid green;
+     }
+
+     label
+     {
+        font-size: 20px;
+        font-weight: bold;
+        float: left;
+        width: 110px;
+
+     }
+
+     input
+     {
+        padding: 10px 5px;
+        width: 250px;
+        border-radius: 5px;
+        border: 1px solid #AAA;
+     }
+
+     #submit
+     {
+        background-color: blueviolet;
+        color: blanchedalmond;
+        font-size: larger;
+        margin: 25px;
+        width: 100px;
+     }
+     #clear
+     {
+        background-color: blueviolet;
+        color: blanchedalmond;
+        font-size: larger;
+        margin: 25px;
+        width: 100px;
+     }
+
+    </style>
+</head>
+<body id="body8">
+
+    <h1 style="text-align: center;">Form Validation with JQuery</h1>
+    <div id="wrapper">
+
+       <div id="div1"><p>
+        <label for="email">Email :</label>
+        <input type="text" id="email" placeholder="e.g example@ex.com"></p>
+        <b id="errorMessage"></b>
+     </div>
+
+        <p> <label for="phone">Phone :</label>
+        <input type="text" id="phone" placeholder="e.g 123456"> </p>
+        <b id="errorPhone"></b>
+
+        <p><label for="password">Password: </label>
+        <input type="password" id="password"> </p>
+        <b id="errorPassword"></b>
+
+        <p> <label for="passwordConfirm">Password Confirm:</label>
+        <input type="password" id="passwordConfirm"> </p>
+        <b id="errorPassword2"></b>
+
+
+        <p><input type="submit" value="Submit" id="submit">
+            <input type="submit" value="Clear" id="clear"></p>
+
+            <p id="success"></p>
+
+    </div>
+
+
+
+    
+</body>
+<script type="text/javascript">
+function isEmail(email) {
+    var regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return regex.test(email);
+}
+
+
+$("#submit").click(function(){
+
+    var errorMessage = "";
+    var errorPhone ="";
+    var errorPassword = "";
+
+    if (isEmail($("#email").val()) == false ){
+
+       errorMessage = "Please Enter EMail";
+       $("#errorMessage").text(errorMessage);
+       $("#errorMessage").css("color", "red");
+    }
+
+
+    if($.isNumeric($("#phone").val()) == false)
+    {
+        
+        errorPhone = "Please Enter valid phone";
+        $("#errorPhone").text(errorPhone);
+        $("#errorPhone").css("color", "red");
+
+    }
+
+    if($("#password").val() != $("#passwordConfirm").val())
+    {
+        errorPassword = "Password did not match! Try again";
+          $("#errorPassword").text(errorPassword);
+          $("#errorPassword").css("color","red");
+
+          $("#errorPassword2").text(errorPassword);
+          $("#errorPassword2").css("color","red");
+    }
+
+    if($("#password").val() == "" || $("#passwordConfirm").val() =="")
+    {     errorPassword = "Password did not enterd!";
+          $("#errorPassword").text(errorPassword);
+          $("#errorPassword").css("color","red");
+
+          $("#errorPassword2").text(errorPassword);
+          $("#errorPassword2").css("color","red");
+
+    }
+
+    else{
+
+        $("#success").text("Sent Done");
+
+    }
+})
+
+$("#clear").click(function(){
+
+   $("#email").val("") ;
+   $("#phone").val("") ;
+   $("#password").val("") ;
+   $("#passwordConfirm").val("") ;
+
+   $("#errorMessage").text("");
+   $("#errorPhone").text("");
+   $("#errorPassword").text("");
+   $("#errorPassword2").text("");
+
+
+
+
+})
+
+</script>
+</html>
