@@ -9,25 +9,9 @@
     <link rel="stylesheet" href="project1.css">
 </head>
 <header>
-    <div id="headerDiv">
-        <a class=".header-link" href="../index.html">Home</a>
-        <a class=".header-link" href="../about.html">About</a>
-        
-        <div class="header-link">
-            Projects
-            <div class="dropdown-content">
-                <a href="../Project1/project1.html">Project 1 (Html ,CSS)</a>
-                <a href="../Project2/index.html">Project 2 (HTML,CSS,JavaScript)</a>
-                <a href="../Project3/index.html">Project 3 (Html , Css , JavaScript)</a>
-                <a href="../Project4/index.html">Project 4 (Html , Css)</a>
-                <a href="../Project5/index.html">Project 5 BBC Clone</a>
-                <a href="../Project6/index.html">Project 6 JS Game</a>
-                <a href="../Project7/index.html">Project 7 JQuery</a>
-                <a href="../Project9/bootstrap.html">Project 9 Bootstrap</a>
-            </div>
-        </div>
-    </div>
+    <div id="navbar"></div>
 </header>
+
 <body>
 <div class="Project1-Div">
 
@@ -71,5 +55,14 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        fetch("../navbar.html")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+          })
+          .catch(error => console.error('Error loading navbar:', error));
+      </script>
+    
 </body>
 </html>

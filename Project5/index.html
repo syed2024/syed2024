@@ -14,27 +14,9 @@
 
 <body id="body5">
     <header>
-        <div id="headerDiv">
-            <a class=".header-link" href="../index.html">Home</a>
-            <a class=".header-link" href="../about.html">About</a>
-            <div class="header-link"> Projects
-                <div class="dropdown-content">
-                    <a href="../Project1/project1.html">Project 1 (Html ,CSS)</a>
-                    <a href="../Project2/index.html">Project 2 (HTML,CSS,JavaScript)</a>
-                    <a href="../Project3/index.html">Project 3 (Html , Css , JavaScript)</a>
-                    <a href="../Project4/index.html">Project 4 (Html , Css)</a>
-                    <a href="../Project5/index.html">Project 5 BBC Clone</a>
-                    <a href="../Project6/index.html">Project 6 JS Game</a>
-                    <a href="../Project7/index.html">Project 7 JQuery</a>
-                    <a href="../Project9/bootstrap.html">Project 9 Bootstrap</a>
-
-
-
-
-                </div>
-            </div>
-        </div>
-        </header>
+        <div id="navbar"></div>
+    </header>
+    
 
     <img src="images/bbc.png" id="logo">
 
@@ -170,6 +152,14 @@
     <div id="menubar-container">
         <p id="footer-text">Clone BBC News Website by Syed Bukhari</p>
 </div>
+<script>
+    fetch("../navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+  </script>
 
 </body>
 
