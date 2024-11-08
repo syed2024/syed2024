@@ -1,9 +1,10 @@
-#navbar {
+#navbar1 {
     background-color: rgb(143, 152, 183);
     height: 50px;
     line-height: 50px;
     text-align: center;
     border: 5px blue double;
+    padding: 0px;
 
 
 
@@ -19,12 +20,22 @@
     clear: both;
 }
 
-#navbar a {
+#navbar1 a {
     text-decoration: none;
     font-size: large;
     font-weight: 500;
-    color: red;
-    padding-left: 20px;
+    color: azure;
+    padding-left: 10px;
+
+
+}
+#navbar1 a:hover {
+    text-decoration: none;
+    font-size: large;
+    font-weight: 500;
+    color: azure;
+    padding-left: 10px;
+    background-color: blue;
 
 
 }
