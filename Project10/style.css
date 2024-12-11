@@ -1,0 +1,13 @@
+#body32  {
+    background-color: #ADD8E6 !important; /* Light Blue color */
+    font-family: Arial, sans-serif;
+    color: #333; /* Dark text for contrast */
+    margin: 0;
+    height: 100vh; /* Make sure it covers the full viewport height */
+}
+
+nav
+{
+    background-color:rgb(66, 183, 7) !important; /* Light Blue color */
+}
+
